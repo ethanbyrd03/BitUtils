@@ -5,6 +5,12 @@ void debug_bitsel(int n, int start, int end);
 
 int main(){
     // test your functions here!
+    debug(0x00F7, 0x000F, mask_bits);
+    debug(0x00F7, 0x000F, set_bits);
+    debug(0x00F7, 0x000F, inverse_bits);
+    debug_bitsel(0xE7E7, 3, 0);
+    debug_bitsel(0xE7E7, 7, 0);
+    debug_bitsel(0xE7E7, 6, 1);
     return EXIT_SUCCESS;
 }
 
